@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #800080, #4b0082);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: #800080;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skills ul,
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li,
+.services li {
+    margin: 10px 0;
+}
+
+.project-card {
+    background: #f4f4f4;
+    margin: 15px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+footer {
+    background: #800080;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.contact a {
+    color: #800080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #25D366;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #111;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #800080;
+}
+
+/* Hero animation */
+header {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Section animation */
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
