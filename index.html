@@ -2,99 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Alex Dadzie | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Dadzie | Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
-
 </head>
-<script src="script.js"></script>
 <body>
-<nav>
-    <div class="logo">Alex Dadzie</div>
-    <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-   <header>
-    <img src="alex.jpeg" alt="Alex Dadzie" class="profile-pic">
-    <h1>Alex Dadzie</h1>
-    <p>Web Developer | IT Support Specialist</p>
-    <a href="#contact" class="btn">Contact Me</a>
-</header>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            I am an Information Technology graduate from Takoradi Technical University.
-            I specialize in web development, networking and IT support services.
-            I love building clean and functional systems.
-        </p>
-    </section>
+    <header class="header">
+        <a href="#" class="logo">Portfolio<span>.</span></a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <section class="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-       
-            <li>JavaScript</li>
-            <li>Networking</li>
-            <li>IT Support</li>
-            <li>MICROSOFT OFFICE</li>
-        </ul>
-    </section>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Alex Dadzie</h1>
+            <h3>I'm a <span class="typing"></span></h3>
+            <p>Hello, welcome to my portfolio website! I'm passionate about creating responsive and user-friendly websites. My goal is to build websites that are not only visually appealing but also functional and accessible to all users. Developing is fun, learn, design, code, troubleshoot and solve problems.</p>
+            
+            <div class="btn-box">
+              <a href="FORM 2.pdf" class="btn" download>Download CV</a>
+            </div>
 
-    <section class="projects">
-        <h2>Projects</h2>
-
-        <div class="project-card">
-            <h3>School Management System</h3>
-            <p>Built with HTML, CSS, PHP & MySQL.</p>
+            <div class="social-media">
+               <a href="https://github.com/Aledad" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://twitter.com/@dadzie18479" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://youtube.com/@SirAlex1212-j9r" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+     <a href="https://www.tiktok.com/@alexdadzie4" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+       <a href="https://wa.me/0509475080" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+            </div>
         </div>
 
-        <div class="project-card">
-            <h3>Media Gallery Website</h3>
-            <p>Image and video upload platform with admin dashboard.</p>
+        <div class="home-img">
+            <div class="glowing-circle">
+                <div class="image-box">
+                    <img src="image/pro.jpeg" alt="Alex Dadzie profile">
+                </div>
+            </div>
         </div>
+    </section>
+<section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
 
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Website Development</h3>
+                <p>Creating high-performance, responsive websites that look great on any device.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Design</h3>
+                <p>Designing modern, user-friendly interfaces that provide a smooth experience.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Exploring Tech</h3>
+                <p>Helping workers and students in microsoft office suit.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
     </section>
 
-    <section class="services">
-        <h2>Services</h2>
-        <ul>
-            <li>Website Development</li>
-           
-            <li>Networking Setup</li>
-            <li>Microsoft Office Training</li>
-        </ul>
-    </section>
+    <<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!(via email)</span></h2>
 
- <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-
-    <p>Email: 
-        <a href="mailto:alexdadzie@email.com">
-            alexdadzie@email.com
-        </a>
-    </p>
-
-    <p>Phone: 
-        <a href="tel:+233509475080">
-            +233 50 947 5080
-        </a>
-    </p>
-
-    <a href="https://wa.me/233509475080" target="_blank" class="whatsapp-btn">
-        Chat Me on WhatsApp
-    </a>
+    <form action="https://formspree.io/f/xykdavlv" method="POST">
+        <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-box">
+            <input type="number" name="mobile" placeholder="Mobile Number">
+            <input type="text" name="subject" placeholder="Email Subject" required>
+        </div>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
 </section>
-    </section>
 
-    <footer>
-        <p>© 2026 Alex Dadzie. All Rights Reserved.</p>
+    <footer class="footer">
+           <div class="footer-image">
+        <img src="image/MY LOGO.jpeg" alt="Footer Logo">
+    </div>
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by Alex Dadzie | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
     </footer>
-<script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
