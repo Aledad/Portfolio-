@@ -261,3 +261,59 @@ body {
         gap: 2rem;
     }
 }
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    /* Adjust Header */
+    .header {
+        padding: 1.5rem 5%;
+    }
+    
+    .navbar {
+        display: none; /* We usually hide the menu or use a toggle for mobile */
+    }
+
+    /* Stack Hero Section vertically */
+    .home {
+        flex-direction: column-reverse; /* Puts image on top of text */
+        justify-content: center;
+        gap: 2rem;
+        height: auto;
+        padding: 10rem 5% 5rem;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Resize the Glowing Circle for smaller screens */
+    .home-img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .image-box {
+        width: 240px;
+        height: 240px;
+    }
+
+    /* Stack About Section */
+    .about {
+        flex-direction: column;
+        padding: 5rem 5%;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 80vw;
+    }
+
+    /* Contact Form - Make inputs full width */
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
